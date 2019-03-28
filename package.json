@@ -15,17 +15,29 @@
     "test": "npm run test:unit",
     "test:unit": "jest --config tests/unit/jest.config.js --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omozzww/xbs-confirm.git"
+  },
   "browser": {
     "./sfc": "src/xbs-confirm.vue"
   },
-  "author": "",
+  "keywords": [
+    "vue",
+    "confirm"
+  ],
+  "bugs": {
+    "url": "https://github.com/omozzww/xbs-confirm/issues"
+  },
+  "homepage": "https://github.com/omozzww/xbs-confirm#readme",
+  "author": "Shoujia Wu <omozzww@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/plugin-proposal-function-bind": "^7.2.0",
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
-    "@babel/preset-stage-0": "^7.0.0",
     "babel-plugin-dynamic-import-node": "^2.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "cross-env": "^5.2.0",
@@ -43,8 +55,5 @@
     "uglify-es": "^3.3.9",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
-  },
-  "dependencies": {
-    "@babel/plugin-proposal-function-bind": "^7.2.0"
   }
 }

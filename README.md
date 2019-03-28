@@ -1,1 +1,7 @@
-<h1 align="center">v-tooltip</h1>
+<h1 align="center">xbs-confrim</h1>
+
+
+
+## References
+
++ [vux](https://doc.vux.li/zh-CN/components/confirm.html)

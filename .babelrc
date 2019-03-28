@@ -1,0 +1,21 @@
+{
+	"presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+  	"@babel/plugin-proposal-function-bind"
+  ],
+	"env": {
+		"test": {
+			"plugins": [
+				"@babel/plugin-transform-es2015-modules-commonjs",
+				"@babel/plugin-dynamic-import-node"
+			]
+		}
+	}
+}

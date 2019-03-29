@@ -1,5 +1,5 @@
 <template>
-		<div class="xbs-dialog" :class="{ 'xbs-dialog-absolute': layout === 'VIEW_BOX' }">
+		<div class="xbs-dialog-container" :class="{ 'xbs-dialog-absolute': layout === 'VIEW_BOX' }">
 				<transition :name="maskTransition">
 						<div class="xbs-mask" @click="hide" v-show="show" :style="maskStyle"></div>
 				</transition>
@@ -35,7 +35,7 @@ export default {
 			},
 			dialogClass: {
 					type: String,
-					default: 'xbs-dialog'
+					default: 'a-xbs-dialog'
 			},
 			hideOnBlur: Boolean,
 			dialogStyle: Object,
@@ -99,7 +99,7 @@ export default {
 <style lang="less">
 @import './transition.less';
 
-.xbs-dialog-absolute .t-xbs-dialog {
+.xbs-dialog-absolute .xbs-dialog {
 		position: absolute;
 }
 

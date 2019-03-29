@@ -1,0 +1,39 @@
+.t-xbs-fade-enter-active, .t-xbs-fade-leave-active {
+	opacity: 1;
+	transition: opacity linear 0.2s;
+}
+.t-xbs-fade-enter, .t-xbs-fade-leave-to {
+	opacity: 0;
+}
+.a-xbs-dialog-enter-active {
+	animation: xbs-dialog-in .5s;
+}
+
+.a-xbs-dialog-leave-active {
+	animation: xbs-dialog-out .3s;
+}
+@keyframes xbs-dialog-in {
+	0% {
+		transform: scale(1.185);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes xbs-dialog-out {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.85);
+		opacity: 0;
+	}
+}
+.xbs-mask-enter, .xbs-mask-leave-active {
+	opacity: 0;
+}
+.xbs-mask-leave-active, .xbs-mask-enter-active {
+	transition: opacity 300ms;
+}

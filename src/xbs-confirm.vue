@@ -4,7 +4,7 @@
 		v-model="showValue"
 		:dialog-class="'xbs-dialog'"
 		:mask-transition="maskTransition"
-		:dialog-transition="'xbs-fade'"
+		:dialog-transition="dialogTransition"
 		:hide-on-blur="hideOnBlur"
 		:mask-z-index="maskZIndex"
 		@on-hide="$emit('on-hide')">
@@ -66,12 +66,12 @@ export default {
 		cancelText: String,
 		maskTransition: {
 			type: String,
-			default: 'xbs-fade'
+			default: 'xbs-mask'
 		},
 		maskZIndex: [String, Number],
 		dialogTransition: {
 			type: String,
-			default: 'xbs-dialog'
+			default: 'a-xbs-dialog'
 		},
 		content: String,
 		closeOnConfirm: {
@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style lang="less">
-@import './transition.less';
+// @import './transition.less';
 @import './mask.less';
 @import './dialog.less';
 
